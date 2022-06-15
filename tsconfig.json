@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "dist",
+    "rootDir": ".",
+    "esModuleInterop": true,
+    "lib": [
+      "dom",
+      "es2019"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}
