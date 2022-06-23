@@ -6,12 +6,12 @@ const input: string[][] = [
   ['q', 'r'],
 ];
 
-function getUnique<T extends string>(array: T[]): string[] {
-  return array.filter((item: T, i: number) => array.indexOf(item) === i);
+function getUnique<T>(array: T[]): T[] {
+  return array.filter((item, i) => array.indexOf(item) === i);
 }
 
-function getDuplicates<T extends string>(array: T[]): string[] {
-  return array.filter((item: T, i: number) => array.indexOf(item) !== i);
+function getDuplicates<T>(array: T[]): T[] {
+  return array.filter((item, i) => array.indexOf(item) !== i);
 }
 
 export function maxItemAssociation(arr: string[][]): string[] {
@@ -27,6 +27,12 @@ export function maxItemAssociation(arr: string[][]): string[] {
       }
     });
   });
+
+  if (getUnique(rawResult.flat()).length % 2 === 0) {
+    return getUnique(rawResult.flat())
+      .sort()
+      .slice(0, getUnique(rawResult.flat()).length / 2);
+  }
 
   return getUnique(rawResult.flat()).sort();
 }
