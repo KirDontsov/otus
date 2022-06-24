@@ -1,4 +1,4 @@
-import { maxItemAssociation } from '../index';
+import { maxItemAssociation } from '..';
 
 const input: string[][] = [
   ['a', 'b'],
