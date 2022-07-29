@@ -8,3 +8,5 @@
    * yarn jest src/maxItemAssociation/__tests__/maxItemAssociation.test.ts
 2. [promiseReduce](https://github.com/KirDontsov/otus/blob/master/src/promiseReduce/promiseReduce.ts)
    * yarn jest src/promiseReduce/__tests__/promiseReduce.test.ts
+3. [getPath](https://github.com/KirDontsov/otus/blob/master/src/getPath/getPath.ts)
+   * yarn jest src/getPath/__tests__/getPath.test.ts

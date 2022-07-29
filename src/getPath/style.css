@@ -1,0 +1,12 @@
+.head {
+	width: 100%;
+	display: flex;
+	justify-items: center;
+	text-align: center;
+}
+
+.box {
+	background: #f00;
+	width: 200px;
+	height: 100px;
+}

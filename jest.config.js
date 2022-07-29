@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   verbose: true,
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   roots: ['<rootDir>/src'],
   // Jest transformations -- this adds support for TypeScript
   // using ts-jest for tsx
