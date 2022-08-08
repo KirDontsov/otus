@@ -1,0 +1,11 @@
+{
+  "name": "node-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tree.ts",
+  "scripts": {
+    "tree": "node tree.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,3 +1,1 @@
-import { maxItemAssociation } from './maxItemAssociation';
-
-export { maxItemAssociation };
+export { maxItemAssociation } from './maxItemAssociation';
