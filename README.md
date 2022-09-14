@@ -10,3 +10,7 @@
    * yarn jest src/promiseReduce/__tests__/promiseReduce.test.ts
 3. [getPath](https://github.com/KirDontsov/otus/blob/master/src/getPath/getPath.ts)
    * yarn jest src/getPath/__tests__/getPath.test.ts
+4. [tree](https://github.com/KirDontsov/otus/blob/master/src/tree/tree.ts)
+   * yarn jest src/tree/__tests__/tree.test.ts
+5. [graphqlApi](https://github.com/KirDontsov/otus/blob/master/src/graphqlApi/src/index.ts)
+   * yarn dev

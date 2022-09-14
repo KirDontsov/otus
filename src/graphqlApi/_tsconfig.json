@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "dist",
-    "rootDir": ".",
+    "rootDir": "src/graphqlApi/",
     "esModuleInterop": true,
     "target": "esNext",
     "module": "commonjs",
@@ -15,6 +15,6 @@
     ]
   },
   "include": [
-    "src"
+    "src/graphqlApi"
   ]
 }
