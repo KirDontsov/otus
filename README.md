@@ -9,8 +9,11 @@
 2. [promiseReduce](https://github.com/KirDontsov/otus/blob/master/src/promiseReduce/promiseReduce.ts)
    * yarn jest src/promiseReduce/__tests__/promiseReduce.test.ts
 3. [getPath](https://github.com/KirDontsov/otus/blob/master/src/getPath/getPath.ts)
+   * скомпилировать командой tcs src/getPath/getPath.ts
    * yarn jest src/getPath/__tests__/getPath.test.ts
 4. [tree](https://github.com/KirDontsov/otus/blob/master/src/tree/tree.ts)
    * yarn jest src/tree/__tests__/tree.test.ts
 5. [graphqlApi](https://github.com/KirDontsov/otus/blob/master/src/graphqlApi/src/index.ts)
    * yarn dev
+6. [customElements](https://github.com/KirDontsov/otus/blob/master/src/customElements/index.html)
+   * скомпилировать командой tcs src/customElements/script.ts
