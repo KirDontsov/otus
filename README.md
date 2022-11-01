@@ -19,3 +19,9 @@
 6. [customElements](https://github.com/KirDontsov/otus/blob/master/src/customElements/index.html)
    * скомпилировать командой tsc src/customElements/script.ts
    * удалить в скомпилированном файле module.exports*
+7. [weatherApp](https://github.com/KirDontsov/otus)
+   * cd weather
+   * yarn
+   * yarn start
+   * open http://127.0.0.1:5173
+   
