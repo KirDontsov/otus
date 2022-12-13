@@ -1,0 +1,77 @@
+@import "../../styles/vars.scss";
+
+.CityPage {
+	background: white;
+	border-radius: .5rem;
+	padding: 2rem;
+	width: 100%;
+
+	a {
+		text-decoration: none;
+		color: $base0C;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__header {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+	}
+
+	&__btn {
+		height: 48px;
+		cursor: pointer;
+		&:hover {
+			box-shadow: 0 12px 48px -12px rgba(0, 0, 0, 0.06);
+			border: 1px solid $base0D;
+		}
+	}
+
+	&__city {
+		font-size: 2rem;
+	}
+
+	&__temp {
+		font-size: 2rem;
+	}
+
+	&__humidityIcon {
+		margin-right: .5rem;
+	}
+
+	&__forecastTable {
+		width: 100%;
+		border-collapse: collapse;
+
+		th {
+			font-weight: 600;
+			text-align: left;
+		}
+
+		th:first-child {
+			text-align: left;
+		}
+
+		tr:nth-child(even) {
+			background: $base07;
+			border-radius: 12px;
+		}
+
+		tr:first-child {
+			background: white;
+		}
+
+		td {
+			padding: .5rem;
+		}
+
+		th {
+			padding: 1rem .5rem;
+		}
+	}
+}
