@@ -1,0 +1,21 @@
+<div ngClass="page-block">
+  <div ngClass="page-link-block">
+    <span [routerLink]="['/go']" ngClass="page-link">Go</span>
+    <span [routerLink]="['/add-words']" ngClass="page-link">Add Words</span>
+    <span [routerLink]="['/settings']" ngClass="page-link">Settings</span>
+  </div>
+
+  <h1 ngClass="page-title">Recently Added</h1>
+
+  <div *ngFor="let date of dates" ngClass="date-block">
+    <p ngClass="date">{{date}}</p>
+
+    <div *ngFor="let word of getWords(date)">
+      {{word}} -
+      <span *ngIf="language == 'ru'">{{data[date][word].ru}}</span>
+      <span *ngIf="language == 'es'">{{data[date][word].es}}</span>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+

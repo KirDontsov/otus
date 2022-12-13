@@ -1,0 +1,15 @@
+<div ngClass="page-block">
+  <div ngClass="page-link-block">
+    <span [routerLink]="['/recently-added']" ngClass="page-link">Recently Added</span>
+    <span [routerLink]="['/go']" ngClass="page-link">Go</span>
+    <span [routerLink]="['/settings']" ngClass="page-link">Settings</span>
+  </div>
+
+  <h1 ngClass="page-title">Add Words</h1>
+
+  <form [formGroup]="model" (ngSubmit)="onAddWords()">
+    <textarea formControlName="text" type="text" ngClass="text"></textarea>
+    <button type="submit" ngClass="submit-button">Add</button>
+  </form>
+</div>
+<router-outlet></router-outlet>

@@ -24,4 +24,9 @@
    * yarn
    * yarn start
    * open http://127.0.0.1:5173
+8. [angular](https://github.com/KirDontsov/otus)
+   * cd angular/words
+   * yarn
+   * ng serve --open
+   * open http://127.0.0.1:4200
    

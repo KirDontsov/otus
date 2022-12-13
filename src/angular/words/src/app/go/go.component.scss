@@ -1,0 +1,41 @@
+@import '../app.component.scss';
+
+$margin-right-inline: 15px;
+
+.go-form {
+  margin-bottom: 15px;
+
+  .word {
+    margin-right: $margin-right-inline;
+  }
+
+  .translation {
+    width: 300px;
+    margin-right: $margin-right-inline;
+  }
+
+  .submit-button:disabled {
+    opacity: 0.9;
+  }
+}
+
+.answers {
+  * {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px black solid;
+  }
+
+  .undefined {
+    background-color: white;
+  }
+
+  .right {
+    background-color: green;
+  }
+
+  .wrong {
+    background-color: red;
+  }
+}

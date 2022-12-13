@@ -1,0 +1,25 @@
+<div ngClass="page-block">
+  <div ngClass="page-link-block">
+    <span [routerLink]="['/recently-added']" ngClass="page-link">Recently Added</span>
+    <span [routerLink]="['/go']" ngClass="page-link">Go</span>
+    <span [routerLink]="['/add-words']" ngClass="page-link">Add Words</span>
+  </div>
+  <h1 ngClass="page-title">Settings</h1>
+
+  <form [formGroup]="model">
+    <p ngClass="select-name">Language</p>
+    <select formControlName="language" [value]="language" ngClass="select-dropdown">
+      <option value="ru">Russian</option>
+      <option value="es">Spanish</option>
+    </select>
+
+    <p ngClass="select-name">Number of words</p>
+    <select formControlName="numberOfWords" [value]="numberOfWords" ngClass="select-dropdown">
+      <option>5</option>
+      <option>10</option>
+      <option>15</option>
+      <option>20</option>
+    </select>
+  </form>
+</div>
+<router-outlet></router-outlet>
