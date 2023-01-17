@@ -1,0 +1,24 @@
+<div ngClass="page-block">
+  <div ngClass="page-link-block">
+    <span [routerLink]="['/recently-added']" ngClass="page-link">Recently Added</span>
+    <span [routerLink]="['/add-words']" ngClass="page-link">Add Words</span>
+    <span [routerLink]="['/settings']" ngClass="page-link">Settings</span>
+  </div>
+
+  <h1 ngClass="page-title">Go</h1>
+
+  <form [formGroup]="model" (submit)="checkTranslation()" ngClass="go-form">
+    <span ngClass="word">{{currentWord}}</span>
+    <input formControlName="translation" [value]="currentTranslation" ngClass="translation" />
+    <button type="submit" [disabled]="currentNumber == numberOfWords" ngClass="submit-button">Check</button>
+  </form>
+
+  <div ngClass="answers">
+    <div *ngFor="let answer of answers">
+      <div *ngIf="answer === undefined" ngClass="undefined"></div>
+      <div *ngIf="answer" ngClass="right"></div>
+      <div *ngIf="!answer && answer != undefined" ngClass="wrong"></div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
